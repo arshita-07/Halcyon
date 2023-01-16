@@ -15,8 +15,8 @@ def changeRes(width,height):
 
 capture = cv.VideoCapture(0)
 while True:
-    isTrue, frame= capture.read() #reading frame by frame. the first value is a boolean which contains if the frame wa successfully read or not
-    cv.imshow('Video',frame) #displaying frame by frame
+    isTrue, frame= capture.read() 
+    cv.imshow('Video',frame) 
     if cv.waitKey(20) & 0xFF==ord('d'):
         break
 
